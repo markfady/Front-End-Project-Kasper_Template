@@ -278,7 +278,7 @@ body{
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: rgb(0 0 0 / 40%) ;
+        background-color: rgb(0 0 0 / 35%) ;
     }
     .designs-info{
         position: absolute;
@@ -289,8 +289,6 @@ body{
         background-color: var(--backgroundcolor);
         transform: translateY(-50%);
     }
-
-    
     .designs-introtext h2{
         flex-wrap: wrap;
         font-size: 26px;
@@ -304,7 +302,6 @@ body{
         bottom: 15%;
         gap: 25px;
         padding-top: 19px;
-        
     }
     .designs-options .options {
         display: flex;
@@ -319,3 +316,76 @@ body{
         color: var(--secondarycolor);
         font-weight: 400;
     }
+    /* End designs */
+    /* start portfolio */
+    .portfolio{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .portfolio-introtext{
+        text-align: center;
+    } 
+    .portfolio-introtext h2::before{
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 1px;
+        width: 108px;
+        transform: translateY(43px);
+        right: 47%;
+    }
+    .portfolio-introtext h2{
+        text-transform: uppercase;
+        padding-bottom: 50px;
+        font-size: 30px;
+        letter-spacing: 2px;
+        color: #1f2021;
+        font-weight: 400;
+    }
+    .portfolio-introtext h2::after{
+        content: "";
+        position: absolute;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: var(--secondarycolor);
+        height: 15px;
+        width: 16px;
+        transform: translateY(34px);
+        right: 50%;
+    }
+    .portfolio-introtext p{
+        font-size: 13px;
+        line-height: 25px;
+        color: var(--graycolor);
+        font-weight: 300;
+        width: 417px;
+        transform: translatex(84%);
+    }
+    .portfolio-options{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        position: relative;
+    }
+    .portfolio-options  .portfolio-content ul{
+        position: absolute;
+        display: flex;
+        text-transform: uppercase;
+        list-style: none;
+        justify-content: space-between;
+        gap: 49px;
+        align-items: center;
+        transform: translate(62%, 11px);
+    }
+    .portfolio-options  .portfolio-content li{
+        font-size: 13px;
+        color: #1f2021;
+        font-weight: 400;
+    }
+
+    .portfolio-options  .portfolio-content li.active{
+        border: 1px solid var(--maincolor);
+        border-width: 20px;
+        background-color: var(--maincolor);
+        color: var(--secondarycolor);
+    }
+    /* End portfolio */
