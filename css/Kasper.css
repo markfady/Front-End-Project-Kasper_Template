@@ -113,7 +113,7 @@ body{
     /* start landing */
     .landing{
         min-height: 100vh;
-        background-color: #1f2021;
+        background-color: black;
         background-image: url("../images/landing.jpg");
         background-size: cover;
         position: relative;
@@ -132,7 +132,7 @@ body{
         right: 1%;
         color: rgb(255 255 255 /50%);
     }
- 
+
     .bullets{
         display: flex;
         position: absolute;
@@ -221,7 +221,6 @@ body{
         font-size: 30px;
         letter-spacing: 2px;
         margin-bottom: 30px;
-        color: #1f2021;
         text-transform: uppercase;
         font-weight: 400;
     }
@@ -269,7 +268,7 @@ body{
     /* start designs */
     .designs{
         min-height: 100vh;
-        background-color: #1f2021;
+        background-color: black;
         background-image: url("../images/design-features.jpg");
         background-size: cover;
         position: relative;
@@ -339,7 +338,6 @@ body{
         padding-bottom: 50px;
         font-size: 30px;
         letter-spacing: 2px;
-        color: #1f2021;
         font-weight: 400;
     }
     .portfolio-introtext h2::after{
@@ -352,6 +350,8 @@ body{
         width: 16px;
         transform: translateY(34px);
         right: 50%;
+
+      
     }
     .portfolio-introtext p{
         font-size: 13px;
@@ -378,7 +378,6 @@ body{
     }
     .portfolio-options  .portfolio-content li{
         font-size: 13px;
-        color: #1f2021;
         font-weight: 400;
     }
 
@@ -388,4 +387,145 @@ body{
         background-color: var(--maincolor);
         color: var(--secondarycolor);
     }
+    .images-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 60px;
+
+    }
+    .images-container .box{
+        flex-basis: 25%;
+    }
+    .images-container .box img{
+        max-width: 100%;
+        margin-bottom:25px ;
+        transition: 0.3s;
+    }
+    .images-container .box:hover img{
+        transform: rotate(5deg) scale(1.2);
+    }
+    .images-container .images-text{
+        margin-bottom:20px ;
+        padding-left:20px ;
+    }
+    .images-container .images-text h4{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .images-container .images-text p{
+        color: var(--maincolor);
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .More{
+    padding: 11px 42px;
+    display: block;
+    color: var(--secondarycolor);
+    width: fit-content;
+    background-color: var(--maincolor);
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    }
     /* End portfolio */
+    /* start video */
+    .video{
+        position: relative;
+    }
+    .video video{
+        width: 100%;
+    }
+    .video::before{
+        content: "";
+        position: absolute;
+        top:0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0 0 0 / 40%) ;
+    }
+    .video-text{
+        position: absolute;
+        top: 44%;
+        left: 0%;
+        background-color: var(--backgroundcolor);
+        text-align: center;
+        width: 100%;
+        padding: 60px;
+    }
+    .video-text h2{
+        font-size: 25px;
+        color: var(--secondarycolor);
+        font-weight: 600;
+        line-height: 2.8;
+        text-transform: uppercase;
+    }
+    .video-text p {
+        font-size: 13px;
+        color: var(--secondarycolor);
+        font-weight: 400;
+        margin-bottom: 46px;
+    }
+    .video-text .button{
+        color: var(--secondarycolor);
+        position: absolute;
+        background-color: rgb(0 0 0 / 70%);
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        padding: 11px 36px;
+        width: fit-content;
+        left: 45%;
+    }
+    /* End video */
+    /* start about */
+    .about{
+        padding-top:60px;
+        overflow: hidden;
+    }
+    .about .container .about-introtext{
+        text-align: center;
+    }
+    .about .container .about-introtext h3::before {
+        content: "";
+        width: 8%;
+        margin-top: 30px;
+        position: absolute;
+        height: 1px;
+        background-color: black;
+        transform: translate(-7px, 19px);
+    }
+    .about .container .about-introtext h3 {
+        margin-bottom: 36px;
+        font-size: 30px;
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+    .about .container .about-introtext h3::after {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 17px;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: var(--secondarycolor);
+        right: 49.2%;
+        transform: translate(18px, 40px);
+    }
+    .about .container .about-introtext p {
+        font-size: 13px;
+        line-height: 25px;
+        color: var(--graycolor);
+        font-weight: 300;
+        width: 500px;
+        right: 33%;
+        position: absolute;
+    }
+    .about img{
+        position: relative;
+        right:-14%;
+        bottom: -100px;
+        max-width: 100%;
+    }
+    /* End about */
