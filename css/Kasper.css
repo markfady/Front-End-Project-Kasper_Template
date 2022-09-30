@@ -714,7 +714,8 @@ body{
         /* End screens */
         /* start quote */
         .quote{
-            padding-top: 60px;
+            margin-top: 60px;
+            margin-bottom: 60px;
             background-image: url(../images/quote.jpg);
             min-height: 100vh;
             background-size: cover;
@@ -765,3 +766,128 @@ body{
             font-weight: 600;           
         }
         /* End quote */
+        /* start pricing */
+        .pricing{
+          margin-bottom: 300px;
+        }
+        .pricing .pricing-introtext{
+            text-align: center;
+        }
+        .pricing .pricing-introtext h3{
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            font-size: 30px;
+            letter-spacing: 2px;
+            font-weight: 400;           
+        }
+        .pricing .pricing-introtext h3::before{
+            content: "";
+            position: absolute;
+            width: 115px;
+            height: 1px;
+            transform: translate(10px, 45px);
+            background-color: black;
+        }
+        .pricing .pricing-introtext h3::after{
+            content: "";
+            position: absolute;
+            width: 19px;
+            height: 19px;
+            transform: translate(-80px, 35px);
+            border-radius: 50%;
+            border: 1px solid black;
+            background-color: var(--secondarycolor);
+        }
+    
+        .pricing .pricing-introtext p{
+            position: absolute;
+            font-size: 13px;
+            line-height: 25px;
+            color: var(--graycolor);
+            font-weight: 300;
+            width: 410px;
+            right: 36%;
+        }
+        .pricing-content{
+            margin-top:133px
+        }
+        .pricing-options{
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 71px;
+            position: relative;
+        }
+        .pricing-options .options h2{
+        
+            font-size: 59px;
+            line-height: 89px;
+            font-weight: 500;
+        }
+
+        .pricing-options .options h4{
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .pricing-options .options h4::before{
+            content: "";
+            position: absolute;
+            width: 194px;
+            height: 1px;
+            transform: translate(-50px, -13px);
+            background-color: var(--maincolor);
+        }
+        .pricing-options .options .per::after{
+            content: "";
+            position: absolute;
+            width: 180px;
+            height: 1px;
+            transform: translate(-130px, 36px);
+            background-color: var(--maincolor);
+        }
+    .pricing-options .dollar{
+        position: absolute;
+        transform: translate(-14px, 13px);
+        font-weight: 800;
+        }
+    .pricing-options .per{
+        position: absolute;
+        transform: translate(64px, -30px);
+        font-weight: 600;
+    }
+    .options .features{
+        position: relative;
+        margin-top: 25px;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .options .features .features-content{
+        position: absolute;
+    }
+    .options .features .features-content p{
+        margin-bottom: 50px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    .options .features .features-content p:nth-child(1n+0):after{
+        content: "";
+        position: absolute;
+        width: 109px;
+        height: 1px;
+        transform: translate(-101px, 36px);
+        background-color: var(--maincolor);
+    }
+    .options .features .features-content p:last-child::after{
+        content: "";
+        position: absolute;
+        width: 207px;
+        height: 1px;
+        transform: translate(-123px, 37px);
+        background-color: var(--maincolor);
+    }
+    
+    
+    
